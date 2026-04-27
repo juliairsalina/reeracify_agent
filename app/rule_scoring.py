@@ -295,6 +295,54 @@ def match_keywords(resume: dict[str, Any], expected_keywords: list[str]) -> dict
         "missing_keywords": missing,
     }
 
+def match_keywords(resume: dict[str, Any], expected_keywords: list[str]) -> dict[str, list[str]]:
+    """
+    5) Keyword matching rule
+
+    Checks whether expected role keywords appear anywhere in the resume.
+
+    Matching logic:
+        1) Single-word keyword uses word boundary matching.
+           Example:
+               "sql" matches "SQL"
+               but does not accidentally match unrelated text.
+
+        2) Multi-word keyword uses phrase matching.
+           Example:
+               "data analysis"
+               "power bi"
+               "business intelligence"
+
+    Output:
+        present_keywords
+        missing_keywords
+    """
+    resume_text = normalize_text(collect_resume_text(resume))
+
+    present = []
+    missing = []
+
+    for keyword in expected_keywords:
+        keyword_normalized = normalize_text(keyword)
+
+        if " " in keyword_normalized:
+            # Multi-word phrase match
+            found = keyword_normalized in resume_text
+        else:
+            # Single-word exact-ish match using word boundaries
+            pattern = r"\b" + re.escape(keyword_normalized) + r"\b"
+            found = re.search(pattern, resume_text) is not None
+
+        if found:
+            present.append(keyword)
+        else:
+            missing.append(keyword)
+
+    return {
+        "present_keywords": present,
+        "missing_keywords": missing,
+    }
+
 
 def has_measurable_evidence(text: str) -> bool:
     """

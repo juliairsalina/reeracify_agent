@@ -19,7 +19,7 @@
       "end_date": "2024-08",
       "description": "Supported sales or operations analytics for a mid-sized retail company.",
       "bullets": [
-        "Analyse weeekly sale data using SQL and Excel to identifies category-level revenue trends across 12 store location.",
+        "Analyse weeekly sale data using Excel to identifies category-level revenue trends across 12 store location.",
         "Built a Tableau dashboard to visualize product performance, regional sales, and monthly revenue changes for the operations team.",
         "Cleaned and validated 18,000+ transaction records using Python and pandas, reducing duplicate and incomplete records before reporting.",
         "Prepared weekly data summaries that helped managers track slow-moving inventory and seasonal demand patterns."
@@ -52,10 +52,10 @@
     {
       "name": "Sales Performance Dashboard",
       "description": "Created an interactive dashboard for monitoring sales trends and product performance.",
-      "technologies": ["SQL", "Tableau", "Excel"],
+      "technologies": ["Tableau", "Excel"],
       "bullets": [
         "Designed a Tableau dashboard showing monthly revenue, top products, regional sales, and profit margin trends.",
-        "Wrote SQL queries to aggregate sales data by product category, region, and month.",
+        "Wrote queries to aggregate sales data by product category, region, and month.",
         "Added filters for region, product category, and sales period to support flexible business analysis."
       ]
     },
