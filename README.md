@@ -1,3 +1,5 @@
+# Reeracify: A Hybrid Agentic AI System for Resume Evaluation and Improvement
+
 This project uses a hybrid resume evaluation pipeline made of three main parts:
 
 1. Rule-based scoring layer
