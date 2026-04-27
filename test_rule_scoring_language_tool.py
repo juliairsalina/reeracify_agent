@@ -4,11 +4,11 @@ import json
 from pathlib import Path
 from pprint import pprint
 
-from app.rule_scoring_language_tool import run_rule_based_scoring_with_local_languagetool
+from app.rule_scoring import run_rule_based_scoring
 
 
 def load_sample_resume() -> dict:
-    sample_path = Path("examples/sample_resume_wrong_grammar.json")
+    sample_path = Path("examples/sample_emira.json")
 
     if not sample_path.exists():
         raise FileNotFoundError(
@@ -26,7 +26,7 @@ def main() -> None:
     target_role = resume["target_role"]
     target_level = resume["target_level"]
 
-    result = run_rule_based_scoring_with_local_languagetool(
+    result = run_scoring(
         resume=resume,
         target_role=target_role,
         target_level=target_level,
