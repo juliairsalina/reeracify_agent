@@ -30,7 +30,9 @@ pip install fastapi uvicorn python-dotenv requests openai
 uvicorn app.main:app --reload
 ```
 
-## Expected Rewrite Suggestion
+## Experiment 1: Rule based scoring using public API Language Tool
+
+- Using https://dev.languagetool.org/public-http-api
 
 ```bash
 {
@@ -202,4 +204,26 @@ GRAMMAR FLAGS FROM LANGUAGETOOL
 ==============================
 []
 
+```
+
+- Problem: 
+```bash
+    - free version does have limitation → only check spelling ??
+    - i deliberately did grammar mistakes → to identifies but not detected
+    - this Language Tool also use API calls ?? redundant 
+    - so maybe its better to ask evaluation agent to check grammar checker 
+```
+
+## Experiment 2: Rule based scoring using local Python Language Tool
+
+```bash 
+# Local LanguageTool grammar checker wrapper
+# Requires Java installed on your machine
+# Took a long time to Download LanguageTool 6.8-SNAPSHOT for the first time 259MB
+language-tool-python
+```
+
+- Running the second time 
+```bash
+export LTP_PATH="$HOME/.cache/language_tool_python"
 ```
