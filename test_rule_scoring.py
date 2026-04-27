@@ -8,11 +8,11 @@ from app.rule_scoring import run_rule_based_scoring
 
 
 def load_sample_resume() -> dict:
-    sample_path = Path("examples/sample_resume.json")
+    sample_path = Path("examples/sample_resume_wrong_grammar.json")
 
     if not sample_path.exists():
         raise FileNotFoundError(
-            "Missing examples/sample_resume.json. "
+            "Missing examples/sample_resume_wrong_grammar.json. "
             "Please create the sample resume file first."
         )
 
