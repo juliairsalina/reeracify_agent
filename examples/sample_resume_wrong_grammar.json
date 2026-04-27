@@ -19,7 +19,7 @@
       "end_date": "2024-08",
       "description": "Supported sales or operations analytics for a mid-sized retail company.",
       "bullets": [
-        "Analyze weekly sale data using SQL and Excel to identifies category-level revenue trends across 12 store location.",
+        "Analyse weeekly sale data using SQL and Excel to identifies category-level revenue trends across 12 store location.",
         "Built a Tableau dashboard to visualize product performance, regional sales, and monthly revenue changes for the operations team.",
         "Cleaned and validated 18,000+ transaction records using Python and pandas, reducing duplicate and incomplete records before reporting.",
         "Prepared weekly data summaries that helped managers track slow-moving inventory and seasonal demand patterns."
@@ -72,18 +72,14 @@
   ],
   "skills": [
     "Python",
-    "SQL",
     "Excel",
     "Tableau",
     "Power BI",
-    "pandas",
     "Matplotlib",
     "scikit-learn",
     "Data Analysis",
     "Data Visualization",
-    "Statistics",
     "Dashboard Design",
-    "Pivot Tables",
     "Data Cleaning"
   ]
 }
