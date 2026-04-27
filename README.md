@@ -30,5 +30,19 @@ pip install fastapi uvicorn python-dotenv requests openai
 uvicorn app.main:app --reload
 ```
 
+## Expected Rewrite Suggestion
+
+```bash
+{
+  "rewrite_suggestions": [
+    {
+      "suggestion": "Coordinated student communication and community updates to improve information sharing across international student groups.",
+      "why_it_is_better": "Uses a stronger action verb and clearer professional wording.",
+      "caution": "Add real metrics only if you can verify them."
+    }
+  ]
+}
+```
+
 
 
