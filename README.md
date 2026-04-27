@@ -2,39 +2,23 @@ Repo Structure:
 reeracify_agent/
 ├── backend/
 │   ├── app/
-│   │   ├── main.py
-│   │   │   └── FastAPI app, Pydantic schemas, and API endpoints
-│   │   │
-│   │   ├── rule_scoring.py
-│   │   │   └── Rule-based ATS scoring, keyword checks, weak phrase checks,
-│   │   │       measurable evidence detection, and LanguageTool grammar check
-│   │   │
-│   │   ├── evaluation_agent.py
-│   │   │   └── LLM-based resume benchmark/evaluation agent
-│   │   │
-│   │   ├── rewrite_agent.py
-│   │   │   └── LLM-based bullet rewrite suggestion agent
-│   │   │
-│   │   └── .env
-│   │       └── Local Azure OpenAI and LanguageTool settings, ignored by Git
+│   │   ├── main.py              # FastAPI app, Pydantic schemas, API endpoints
+│   │   ├── rule_scoring.py      # Rule-based ATS scoring and LanguageTool checks
+│   │   ├── evaluation_agent.py  # LLM-based competitiveness evaluation agent
+│   │   ├── rewrite_agent.py     # LLM-based bullet rewrite agent
+│   │   └── .env                 # Local environment variables, not pushed to GitHub
 │   │
 │   ├── config/
-│   │   ├── role_level_rubrics.csv
-│   │   │   └── Editable role/level rubric for expected keywords,
-│   │   │       preferred project count, and bullet count thresholds
-│   │   │
-│   │   └── weak_phrases.csv
-│   │       └── Editable weak phrase list used by rule_scoring.py
+│   │   ├── role_level_rubrics.csv # Editable role/level scoring rubric
+│   │   └── weak_phrases.csv       # Editable weak phrase list
 │   │
 │   ├── examples/
-│   │   └── sample_resume.json
-│   │       └── Sample resume JSON for testing /evaluate and /reevaluate
+│   │   └── sample_resume.json   # Example input for testing /evaluate
 │   │
-│   ├── .gitignore
-│   │   └── Prevents .env, .venv, cache files, and local files from being pushed
-│   │
-│   └── README.md
-│       └── Project setup and usage guide
+│   ├── .venv/                   # Local Python virtual environment, ignored by Git
+│   ├── .gitignore               # Ignored files such as .env and .venv
+│   └── README.md                # Project setup and usage instructions
+
 
 Install Package: 
 pip install fastapi uvicorn python-dotenv requests openai
