@@ -34,7 +34,7 @@ app = FastAPI(
 # Allowed role/level values
 # ============================================================
 
-TargetRole = Literal["Data Analyst", "Backend Developer"]
+TargetRole = str
 TargetLevel = Literal["Entry-level", "Experienced"]
 
 

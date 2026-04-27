@@ -43,6 +43,55 @@ uvicorn app.main:app --reload
   ]
 }
 ```
+## Supported Target Roles and Levels
 
+```bash
+# Data / Software
+Data Analyst:
+  - Entry-level
+  - Experienced
 
+Backend Developer:
+  - Entry-level
+  - Experienced
 
+# Marketing
+Marketing Associate:
+  - Entry-level
+  - Experienced
+
+Digital Marketing Specialist:
+  - Entry-level
+  - Experienced
+
+# IT
+IT Support Specialist:
+  - Entry-level
+  - Experienced
+
+System Administrator:
+  - Entry-level
+  - Experienced
+
+# Admin / Operations
+Administrative Assistant:
+  - Entry-level
+  - Experienced
+
+Operations Coordinator:
+  - Entry-level
+  - Experienced
+
+Human Resources Assistant:
+  - Entry-level
+  - Experienced
+
+Project Coordinator:
+  - Entry-level
+  - Experienced
+
+Customer Success Associate:
+  - Entry-level
+  - Experienced
+
+```
