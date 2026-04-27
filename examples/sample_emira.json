@@ -1,0 +1,49 @@
+{
+  "name": "NUR MUSHIRA BINTI MAZNI",
+  "email": "mushiramazni@gmail.com",
+  "phone": "8210-64534791",
+  "address": null,
+  "summary": "NUR MUSHIRA BINTI MAZNI Melaka, Malaysia | + 82 10 - 64534791 | mushiramazni@gmail.com PROFESSIONAL SUMMARY Final year Data Science student at Korea University with astrong foundation in statistics, computer science, and mathematics , with hands - on experience in Python, deep learning (Py Torch ), computer vision and databases . Currently exploring the development and deployment of end - to - end ML pipelines through capstone design and data mining . Eager to apply analytical and technical",
+  "skills": [],
+  "experience": [
+    {
+      "description": "in Python, deep learning (Py Torch ), computer vision and databases . Currently exploring the development and deployment of end - to - end ML pipelines through capstone design and data mining . Eager to apply analytical and technical"
+    }
+  ],
+  "projects": [
+    {
+      "description": "S AND COMPETITION SAdvanced Machine Learning – VAE based CT to MRI Medical Image Translation Aug 202 5 – De c 202 5 Built a 3 - module generative pipeline (TLM + FLM + VAE) for CT - to - MRI medical image translation under strict VRAM constraints . Applied Real NVP normalizing flow as alearned latent prior to mitigate VAE over - smoothing artifacts . Achieved PSNR 25.52 / SSIM 0.825, surpassing Pix2Pix baseline with only 4.7M parameters (12× more efficient) . Deep Learning – CBAM Attention - based Cr owd Detection Mar 202 5 – Jun 202 5 Proposed aglobal Gaussian kernel for more uniform ground - truth supervision and integrated CBAM attention between VGG - 16 front - end and dilated convolution back - end of CSRNet . De signed astable training pipeline with optimized hyperparameters to ensure effective model convergence. Evaluated on the Shanghai Tech Part Adataset, showing improved density map quality and robustness to scale variation. Introduced ahybrid loss (MSE + SSIM + Count Loss), reducing MAE from 434 to 103 and boosting validation accuracy from 15.8% to 79.7% . Introduction to Computer Visio n – Tr OCR Receipt Scanner Mar 202 5 – Jun 202 5 Integrated Tr OCR (Vision Transformer + autoregressive decoder) for robust text extraction from handwritten and complex real - world receipts . Applied CLAHE contrast enhancement and Hough Transform - based affine deskewing to handle faded and warped receipt inputs . Arranged preprocessed images into Layout LMv3 for structured information extraction, targeting automated expense tracking and claims processing . RE:ALThon GDG on Campus – AI Fishing Compliance App (Excellence Award) Dec 202 4 Contributed to sourcing and integrating public datasets, preprocessing data to ensure compatibility and enable system functionality. Built a Flutter mobile app integrating Google Gemini API to identify fish species from camera images and determine protected/catchable status in real time . Implemented GPS - based fishing restriction zone alerts using Naver Maps API, promoting awareness of marine protected areas ."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Korea University",
+      "degree": "",
+      "year": "Present",
+      "cgpa": null,
+      "details": "Korea University, Seoul, South Korea Mar 20 23 – Present Completed Bridging Program at Hanyang University, South Korea (Jan 2023) Bachelor’s Degree in Data Science ( Senio r Year) YTP MARA Scholar"
+    },
+    {
+      "institution": "Universiti Kuala Lumpur Malaysian Institute",
+      "degree": "Current",
+      "year": "Present",
+      "cgpa": null,
+      "details": "Current CGPA: 3. 44 / 4.50 Universiti Kuala Lumpur Malaysian Institute of Information Technology , Malaysi a Jul"
+    },
+    {
+      "institution": "for Korean University",
+      "degree": "2021 – Dec 2022 Foundation in Science and Technology (",
+      "year": null,
+      "cgpa": "3.97",
+      "details": "2021 – Dec 2022 Foundation in Science and Technology (for Korean University Pathway) YTP MARA Scholar Graduated with CGPA: 3.97 / 4.00 SBP Integrated School of Melaka, Malaysia Jan"
+    },
+    {
+      "institution": "",
+      "degree": "2016 – Ma r 202 1 Pure Science Stream with Syariah and Quran Sunnah SPM Results: 10 A’s, 1 B WORK",
+      "year": null,
+      "cgpa": null,
+      "details": "2016 – Ma r 202 1 Pure Science Stream with Syariah and Quran Sunnah SPM Results: 10 A’s, 1 B WORK"
+    }
+  ],
+  "awards": []
+}
