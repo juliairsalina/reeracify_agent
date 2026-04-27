@@ -1,6 +1,12 @@
 {
   "target_role": "Data Analyst",
   "target_level": "Entry-level",
+  "name": "NUR MUSHIRA BINTI MAZNI",
+  "email": "mushiramazni@gmail.com",
+  "phone": "8210-64534791",
+  "address": null,
+  "summary": "NUR MUSHIRA BINTI MAZNI Melaka, Malaysia | + 82 10 - 64534791 | mushiramazni@gmail.com PROFESSIONAL SUMMARY Final year Data Science student at Korea University with astrong foundation in statistics, computer science, and mathematics , with hands - on experience in Python, deep learning (Py Torch ), computer vision and databases . Currently exploring the development and deployment of end - to - end ML pipelines through capstone design and data mining . Eager to apply analytical and technical",
+
   "education": [
     {
       "school": "Riverside State University",
@@ -85,5 +91,6 @@
     "Dashboard Design",
     "Pivot Tables",
     "Data Cleaning"
-  ]
+  ], 
+  "awards": []
 }
