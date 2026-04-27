@@ -26,7 +26,7 @@ def main() -> None:
     target_role = resume["target_role"]
     target_level = resume["target_level"]
 
-    result = run_scoring(
+    result = rule_scoring(
         resume=resume,
         target_role=target_role,
         target_level=target_level,
