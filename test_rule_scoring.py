@@ -8,11 +8,11 @@ from app.rule_scoring import run_rule_based_scoring
 
 
 def load_sample_resume() -> dict:
-    sample_path = Path("examples/examples.json")
+    sample_path = Path("examples/sample_emira2.json")
 
     if not sample_path.exists():
         raise FileNotFoundError(
-            "Missing examples/file. "
+            "Missing file. "
             "Please create the sample resume file first."
         )
 
@@ -26,13 +26,10 @@ def main() -> None:
     target_role = resume["target_role"]
     target_level = resume["target_level"]
 
-    languagetool_url = "https://api.languagetool.org/v2/check"
-
     result = run_rule_based_scoring(
         resume=resume,
         target_role=target_role,
         target_level=target_level,
-        languagetool_url=languagetool_url,
     )
 
     print("\n==============================")
@@ -73,7 +70,7 @@ def main() -> None:
     pprint(result["weak_phrase_flags"])
 
     print("\n==============================")
-    print("GRAMMAR FLAGS FROM LANGUAGETOOL")
+    print("GRAMMAR FLAGS FROM LOCAL LANGUAGETOOL")
     print("==============================")
     pprint(result["grammar_flags"])
 
