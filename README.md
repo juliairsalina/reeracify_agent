@@ -233,27 +233,12 @@ backend/
 pip install fastapi uvicorn python-dotenv requests openai
 ```
 
-## Run
+- Run
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-## Experiment 1: Rule based scoring using public API Language Tool
-
-- Using https://dev.languagetool.org/public-http-api
-
-```bash
-{
-  "rewrite_suggestions": [
-    {
-      "suggestion": "Coordinated student communication and community updates to improve information sharing across international student groups.",
-      "why_it_is_better": "Uses a stronger action verb and clearer professional wording.",
-      "caution": "Add real metrics only if you can verify them."
-    }
-  ]
-}
-```
 ## Supported Target Roles and Levels
 
 ```bash
@@ -307,7 +292,23 @@ Customer Success Associate:
 
 ```
 
-## Sample Resume Rule-Scoring Test Output
+## Experiment 1: Rule based scoring using public API Language Tool
+
+- Using https://dev.languagetool.org/public-http-api
+
+```bash
+{
+  "rewrite_suggestions": [
+    {
+      "suggestion": "Coordinated student communication and community updates to improve information sharing across international student groups.",
+      "why_it_is_better": "Uses a stronger action verb and clearer professional wording.",
+      "caution": "Add real metrics only if you can verify them."
+    }
+  ]
+}
+```
+
+- Output
 
 ```bash
 ==============================
